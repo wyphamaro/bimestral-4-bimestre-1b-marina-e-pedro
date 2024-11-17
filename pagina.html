@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Treinos</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestão de Treinos</h1>
+    <nav>
+      <ul id="nav-tabs">
+        <li class="tab active" data-tab="agenda">Agenda de Treinos</li>
+        <li class="tab" data-tab="sugestoes">Sugestões de Treinos</li>
+        <li class="tab" data-tab="perfil">Perfil</li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="agenda" class="tab-content active">
+      <h2>Agenda de Treinos</h2>
+      <div id="form-add-treino">
+        <input type="text" id="treino-nome" placeholder="Nome do Treino" class="input-field">
+        <textarea id="treino-descricao" placeholder="Descrição do Treino (opcional)" class="input-field"></textarea>
+        <input type="date" id="treino-dia" class="input-field">
+        <button id="adicionar-treino" class="btn">Adicionar Treino</button>
+      </div>
+      <div id="treino-lista"></div>
+    </section>
+    <section id="sugestoes" class="tab-content">
+      <div class="caixinha">
+        <h2>Sugestões de Treinos</h2>
+        <p>Aqui estão algumas sugestões de treinos para você!</p>
+        <ul id="sugestoes-lista">
+          <li><strong>Musculação - Perna:</strong> 4 séries de 12 repetições de agachamento livre, 3 séries de 15 repetições de leg press, 3 séries de 12 repetições de extensão de pernas.</li>
+          <li><strong>Musculação - Braço:</strong> 4 séries de 12 repetições de rosca direta, 3 séries de 15 repetições de tríceps pulley, 3 séries de 10 repetições de levantamento lateral.</li>
+          <li><strong>Esteira:</strong> Caminhada ou corrida por 30 minutos em velocidade moderada.</li>
+          <li><strong>Cardio:</strong> 20 minutos de pular corda ou bicicleta ergométrica.</li>
+          <li><strong>Yoga:</strong> 40 minutos com foco em alongamento e posturas básicas.</li>
+          <li><strong>Treino de Costas:</strong> 3 séries de 12 repetições de puxada alta, 4 séries de 10 remadas curvadas.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="perfil" class="tab-content">
+      <div class="caixinha">
+        <h2>Perfil</h2>
+        <p id="user-name"></p>
+        <p id="user-email"></p>
+        <button id="logout-btn" class="btn">Sair</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

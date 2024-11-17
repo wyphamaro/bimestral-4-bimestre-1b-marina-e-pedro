@@ -1,0 +1,166 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: flex-start; /* Alinha ao topo */
+    align-items: flex-start; 
+    height: auto; /* Remover 100vh para não travar a altura */
+    flex-direction: column;
+    overflow-y: auto; /* Permite rolagem */
+  }
+  
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura */
+}
+
+h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+#nav-tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#nav-tabs .tab {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#nav-tabs .tab.active {
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+main {
+    width: 100%;
+    padding-top: 20px; /* Dá um espaço após o cabeçalho */
+    display: flex;
+    justify-content: flex-start; /* Alinha ao topo */
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos a altura da tela */
+  }
+
+/* Estilo dos campos de treino */
+.input-field {
+    width: 80%; /* Ajustando a largura para centralizar melhor */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-width: 600px; /* Máximo de largura para não ficar muito largo */
+}
+
+#form-add-treino {
+    margin-top: 20px;
+}
+
+/* Botões */
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.concluido-btn {
+    background-color: green;
+}
+
+/* Treino */
+#treino-lista {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens de treino */
+}
+
+.treino-item {
+    background-color: #fff;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta a largura para centralizar melhor */
+    max-width: 600px; /* Máximo de largura para não ficar muito largo */
+}
+
+.treino-item button {
+    background-color: #f44336;
+    margin-right: 10px;
+}
+
+.treino-item button.concluido-btn {
+    background-color: green;
+}
+
+/* Container para login e cadastro */
+.auth-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+/* Link de navegação */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Caixa para as abas Sugestões e Perfil */
+.caixinha {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sugestoes, #perfil {
+    padding-top: 20px;
+}
+
+/* Estilo para treinos concluídos */
+.treino-item.concluido {
+    background-color: #28a745;
+    color: white;
+}
+
+.treino-item button {
+    margin-top: 10px;
+}
